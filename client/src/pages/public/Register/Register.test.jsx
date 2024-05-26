@@ -164,17 +164,19 @@ describe('Register Page Tests', () => {
 		}
 		expect(reset).toHaveBeenCalledTimes(1);
 	});
-	test('Should render loading component when the request is loading', () => {
+	test('Should render loading component when the request is loading', async () => {
 		const loadingStatus = registerMutation();
 
 		const loader = screen.getByTestId('loader-container');
 
 		if (loadingStatus.isLoading) {
-			expect(loader).toBeInTheDocument();
+			await waitFor(() => {
+				expect(loader).toBeInTheDocument();
+			});
 		}
 	});
 	test('Should display SuccessPopUp on successful registration', () => {
-		nock('https://9360-181-143-211-148.ngrok-free.app')
+		nock('https://d9f0-181-143-211-148.ngrok-free.app')
 			.post('/api/user')
 			.reply(200, {
 				data: {
@@ -199,12 +201,15 @@ describe('Register Page Tests', () => {
 			});
 	});
 	test('Should display ErrorPopUp when an error occurs during registration', () => {
-		nock('https://9360-181-143-211-148.ngrok-free.app')
+		nock('https://d9f0-181-143-211-148.ngrok-free.app')
 			.post('/api/user')
 			.reply(500, { error: 'Internal Server Error' });
 
 		waitFor(async () => {
 			await expect(screen.getByRole('alert')).toBeInTheDocument();
+		});
+		waitFor(async () => {
+			await expect(console.error).value.toBe('Internal Server Error');
 		});
 	});
 	test('Should redirect to login page when "LogIn" link is clicked', () => {

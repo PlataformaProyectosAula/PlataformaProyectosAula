@@ -13,7 +13,6 @@
 	}
 
 	&__textBold {
-		font-size: 0.8rem;
 		font-weight: 600;
 		&:nth-child(2) {
 			margin-bottom: 0.4rem;
@@ -21,23 +20,29 @@
 	}
 
 	&__textLight {
-		font-size: 0.77rem;
+		font-weight: 300;
 		color: $text-grey;
 	}
 
+	&__textRegular{
+
+	}
+
 	&__hr {
-		margin-bottom: 3rem;
-		opacity: 0.4;
+		margin-bottom: 2rem;
+		height: 2px;
+		background-color: rgba($light-grey, 0.9);
+		border: none;
 	}
 }
 
 .button {
 	margin-block: 1rem;
-	font-size: 0.7rem;
+	font-size: 0.77rem;
 	color: #fff;
-	padding: 0.6rem 0.9rem;
-	font-weight: 600;
-
+	padding: 0.7rem 0.9rem;
+	font-weight: 700;
+	width: 25%;
 	&:hover {
 		transition: background-color 0.3s 0.3s ease-in;
 	}
@@ -53,8 +58,8 @@
 
 .buttonActivate {
 	@extend .button;
-	background-color: #2e8b57;
+	background-color: #0f6534;
     &:hover {
-		background-color: #1d6d40;
+		background-color: #028239;
 	}
 }

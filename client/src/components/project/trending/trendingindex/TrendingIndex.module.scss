@@ -1,0 +1,29 @@
+@import '../../../../assets/styles/partials/variables';
+@import '../../../../assets/styles/mixins/mixins';
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin: 2rem auto;
+	&__title {
+		align-self: flex-start;
+		font-size: 1.9rem;
+		color: $primary-purple;
+	}
+    &__link{
+        display: block;
+        float: right;
+        margin-block: 2rem;
+        color: $primary-blue;
+        text-decoration: underline;
+        &:hover{
+            color: $secondary-blue;
+            transition: 0.3s 0.3s ease-in;
+        }
+    }
+    &__loaderContainer{
+        margin: 3rem;
+    }
+}

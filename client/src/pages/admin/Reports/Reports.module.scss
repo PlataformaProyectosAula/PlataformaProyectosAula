@@ -1,0 +1,24 @@
+@import '../../../assets/styles/partials/variables';
+@import '../../../assets/styles/mixins/mixins';
+
+.section {
+	padding: 5rem 2rem;
+	&__title {
+		color: $primary-purple;
+		text-align: center;
+		margin-bottom: 1.6rem;
+		font-size: 1.7rem;
+	}
+	&__loader {
+		@include loaderContainer;
+	}
+}
+
+.article {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.5rem;
+}

@@ -1,0 +1,80 @@
+@import '../../../assets/styles/partials/variables';
+@import '../../../assets/styles/mixins/mixins';
+.profile {
+	background-color: $primary-white;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.7rem;
+	line-height: 1.4;
+
+	&__button {
+		align-self: flex-start;
+		background-color: inherit;
+	}
+	&__img__container {
+		width: 100;
+	}
+	&__img {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+	&__text__bold {
+		font-weight: 500;
+	}
+	&__text__light {
+		font-weight: 200;
+		color: $text-grey;
+	}
+	&__text__regular {
+		font-weight: 300;
+		text-align: center;
+	}
+	&__container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		margin-top: 0.5rem;
+        margin-bottom: 1rem;
+	}
+	&__rectangle {
+		background-color: $secondary-yellow;
+		color: $primary-white;
+		font-size: 0.8rem;
+		font-weight: 500;
+		width: 40%;
+		max-width: 160px;
+		padding: 0.8rem 0.7rem;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0.9rem;
+		box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+	}	
+}
+
+.section {
+	background-color: $primary-white;
+	min-height: 50vh;
+	&__button__container {
+		@include sectionNav;
+	}
+
+	&__button {
+		@include sectionNavButton;
+	}
+
+	&__button__active {
+       @include sectionNavButtonActive;
+	}
+}
+
+.link{
+	display: block;
+	color: $primary-blue;
+	margin: 2rem 2rem 0 2rem;
+}

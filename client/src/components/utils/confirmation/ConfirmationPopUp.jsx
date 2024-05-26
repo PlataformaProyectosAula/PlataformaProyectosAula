@@ -5,14 +5,10 @@ import iconConfirmation from '../../../assets/img/icons/exclamation.svg';
 // Dependencies
 import { PropTypes } from 'prop-types';
 
-export const ConfirmationPopUp = ({ message, visible, setVisible }) => {
-
-	const handleClosePopUp = () => {
-		setVisible((prevVisible)=>({...prevVisible, deactivateUserWarning: false}));
-	};
+export const ConfirmationPopUp = ({ message, handleClose, onAccept}) => {
 
 	return (
-		<div className={visible ? styles.coverOpacity : styles.coverHidden}>
+		<div className={styles.coverOpacity}>
 			<div className={styles.card}>
 				<div className={styles.card__circle}>
 					<img
@@ -27,11 +23,11 @@ export const ConfirmationPopUp = ({ message, visible, setVisible }) => {
 					<button
 						type='button'
 						className={styles.card__buttonCancel}
-						onClick={handleClosePopUp}
+						onClick={()=>handleClose()}
 					>
 						Cancelar
 					</button>
-                    <button type="button" className={styles.card__buttonAccept}>Aceptar</button>
+                    <button type="button" className={styles.card__buttonAccept} onClick={()=>onAccept()}>Aceptar</button>
 				</div>
 			</div>
 		</div>
@@ -40,6 +36,6 @@ export const ConfirmationPopUp = ({ message, visible, setVisible }) => {
 
 ConfirmationPopUp.propTypes = {
 	message: PropTypes.string,
-	visible: PropTypes.obj,
-	setVisible: PropTypes.func,
+	handleClose: PropTypes.func,
+	onAccept: PropTypes.func,
 };

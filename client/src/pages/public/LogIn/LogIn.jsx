@@ -4,7 +4,6 @@ import styles from './LogIn.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useMutation } from 'react-query';
-import Cookies from 'js-cookie';
 // Request
 import { loginRequest } from '../../../api/authApi';
 // Components
@@ -50,9 +49,13 @@ export const LogIn = () => {
 				onSuccess: (mutationResult) => {
 					reset();
 					const role = mutationResult.data.attributes.role_id;
-					//Save the user token and role in cookies
-					Cookies.set('role', role);
-					Cookies.set('token', mutationResult.data.attributes.token);
+					//Save the user token and role in localstorage
+					localStorage.setItem('role', role);
+					localStorage.setItem('token', mutationResult.data.attributes.token);
+					localStorage.setItem('userId', mutationResult.data.id);
+					console.log(localStorage.getItem('role'));
+					console.log(localStorage.getItem('token'));
+					console.log(localStorage.getItem('userId'));
 					handleUserRedirection(role);
 				},
 			});
@@ -138,13 +141,16 @@ export const LogIn = () => {
 							Registrate
 						</Link>
 					</p>
+
 					<div data-testid='loader-container' className={styles.form__loader}>
-						<BarLoader
-							color='#+'
-							height={7}
-							width={470}
-							loading={loginMutation.isLoading}
-						/>
+						{loginMutation.isLoading && (
+							<BarLoader
+								color='#0A84F4'
+								height={7}
+								width={470}
+								loading={loginMutation.isLoading}
+							/>
+						)}
 					</div>
 				</form>
 			</main>

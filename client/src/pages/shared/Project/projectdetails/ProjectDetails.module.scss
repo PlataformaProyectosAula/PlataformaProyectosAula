@@ -1,0 +1,136 @@
+@import '../../../../assets/styles/partials/variables';
+@import '../../../../assets/styles/mixins/mixins';
+
+.main{
+	background-color: $primary-white;
+	height: fit-content;
+	margin-bottom: 2rem;
+}
+
+.section {
+	padding: 3rem 1.5rem;
+}
+
+.card {
+	margin: 3rem auto;
+	background-color: $light-white;
+	@media (min-width: 1000px) {
+		width: 40vw;
+		max-width: 35vw;
+	}
+	&__imgContainer {
+		width: 100%;
+	}
+	&__img {
+		width: 100%;
+	}
+	&__contentContainer {
+		padding: 0.5rem 0.8rem;
+		line-height: 1.7;
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+
+		&__container {
+			display: flex;
+			justify-content: space-between;			
+			flex-wrap: wrap;
+			gap: 0.7rem 4rem;
+			margin-block: 1rem;
+			padding-right: 0.8rem;
+		}
+	}
+	&__title {
+		color: $primary-purple;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+	&__text {
+		font-weight: 400;
+		line-height: 1.6;
+	}
+	&__button__download {
+		padding: 0.8rem;
+		margin-top: 1rem;
+		box-shadow:
+			rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+			rgb(209, 213, 219) 0px 0px 0px 1px inset;
+
+		&:hover {
+			background-color: $light-grey;
+			transition: 0.3s 0.3s ease-in;
+		}
+	}
+	&__buttonContainer {
+		padding: 0.4rem 2rem 1rem 0.4rem;
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.5rem;
+	}
+	&__button {
+		background-color: inherit;
+		font-size: 1.4rem;
+		padding: 0.6rem;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.3s 0.3s ease-in;
+		}
+	}
+	&__buttonLike {
+		@extend .card__button;
+		color: $text-grey;
+		fill: red;
+		&:hover {
+			color: red;
+		}
+	}
+	&__buttonLike__active {
+		@extend .card__button;
+		color: $primary-red;
+		&:hover {
+			color: red;
+		}
+	}
+	&__buttonComment {
+		@extend .card__button;
+		color: $secondary-yellow;
+		&:hover {
+			color: $primary-yellow;
+		}
+	}
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text__light {
+		color: #432e2e;
+		font-weight: 300;
+		display: block;
+
+		&:nth-child(2){
+		// margin-top: 0.8rem;
+			color: rgb(10, 7, 27);
+			// margin-left: 5.3rem;
+		}
+	}
+}
+
+.loaderContainer {
+	@include loaderContainer;
+	padding: 5rem;
+
+}
+
+.wrapper {
+	margin: 2rem auto;
+	@media (min-width: 1000px) {
+		width: 40vw;
+		max-width: 45vw;
+	}
+	&__title {
+		color: $primary-purple;
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+	}
+}

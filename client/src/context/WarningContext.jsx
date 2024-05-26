@@ -7,6 +7,8 @@ const WarningContextProvider = ({ children }) => {
         deactivateUserWarning: false,
 		listUsersError: false,
 		logoutError: false,
+		deleteMyProjectError: false,
+		deleteMyProjectSuccess: false,
     });
 
 	return (

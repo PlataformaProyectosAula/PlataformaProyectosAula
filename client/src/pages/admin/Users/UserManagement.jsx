@@ -18,7 +18,7 @@ export const UserManagement = () => {
 			{visible && visible.listUsersError && <ErrorPopUp message="Ha ocurrido un error al tratar de listar los usuarios" />}
 			{visible && visible.logoutError && <ErrorPopUp message="Ha ocurrido un error al tratar de cerrar sesión" />}
 			<main>
-				{/* <UsersList /> */}
+				<UsersList />
 			</main>
 		</>
 	);

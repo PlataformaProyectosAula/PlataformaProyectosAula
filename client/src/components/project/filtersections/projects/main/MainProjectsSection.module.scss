@@ -1,0 +1,19 @@
+@import '../../../../../assets/styles/mixins/mixins';
+@import '../../../../../assets/styles/partials/variables';
+
+
+.section{
+    margin-top: 1.5rem;
+
+    &__buttonContainer{
+        @include sectionNav;
+    }
+
+    &__button{
+        @include sectionNavButton;
+    }
+
+    &__buttonActive{
+        @include sectionNavButtonActive;
+    }
+}

@@ -1,0 +1,62 @@
+@import '../../../assets/styles/mixins/mixins';
+@import '../../../assets/styles/partials/variables';
+
+
+.section {
+	@include sectionStyles;
+
+	&__loader {
+		@include loaderContainer;
+	}
+
+    &__filter{
+        margin: 6rem auto 4rem auto;
+        width: 90%;
+    }
+    &__cardContainer{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.form{
+    display:  flex;
+    &__input{
+        width: 20%;
+        border: none;
+        padding: 0.7rem;
+        font-size: 0.9rem;
+        border-radius: 0;
+        outline: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+
+        &:first-child{
+            width: 60%;
+        }
+        
+        &:focus{
+            box-shadow:
+			rgba(17, 17, 26, 0.05) 0px 1px 0px,
+			rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        }
+    }
+        
+    &__button{
+        width: 10%;
+        padding: 0.3rem;
+        border-radius: 0;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background-color: $secondary-blue;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+           background-color: darkblue;
+           transition: background-color 0.3s 0.3s ease-in;
+        }
+    }
+}

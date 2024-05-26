@@ -1,0 +1,19 @@
+@import '../../../assets/styles/mixins/mixins';
+.section{
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+.loaderContainer{
+    @include loaderContainer;
+}

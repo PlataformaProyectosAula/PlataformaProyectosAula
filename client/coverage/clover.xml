@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1715353498923" clover="3.2.0">
+  <project timestamp="1715353498923" name="All files">
+    <metrics statements="309" coveredstatements="123" conditionals="156" coveredconditionals="56" methods="89" coveredmethods="23" elements="554" coveredelements="202" complexity="0" loc="309" ncloc="309" packages="21" files="25" classes="25"/>
+    <package name="api">
+      <metrics statements="121" coveredstatements="41" conditionals="2" coveredconditionals="0" methods="29" coveredmethods="6"/>
+      <file name="authApi.js" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\api\authApi.js">
+        <metrics statements="25" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="7" count="7" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+      </file>
+      <file name="careersApi.js" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\api\careersApi.js">
+        <metrics statements="15" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="37" count="6" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+      </file>
+      <file name="profileApi.js" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\api\profileApi.js">
+        <metrics statements="7" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+      <file name="projectsApi.js" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\api\projectsApi.js">
+        <metrics statements="46" coveredstatements="15" conditionals="2" coveredconditionals="0" methods="10" coveredmethods="3"/>
+        <line num="6" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="4" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="56" count="4" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+        <line num="69" count="1" type="stmt"/>
+        <line num="77" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="86" count="4" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
+        <line num="88" count="0" type="stmt"/>
+        <line num="94" count="0" type="stmt"/>
+        <line num="96" count="0" type="stmt"/>
+        <line num="100" count="4" type="stmt"/>
+        <line num="101" count="0" type="stmt"/>
+        <line num="102" count="0" type="stmt"/>
+        <line num="109" count="0" type="stmt"/>
+        <line num="110" count="0" type="stmt"/>
+        <line num="112" count="0" type="stmt"/>
+        <line num="116" count="4" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="125" count="0" type="stmt"/>
+        <line num="126" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+      </file>
+      <file name="usersApi.js" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\api\usersApi.js">
+        <metrics statements="28" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="3" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.layout.logoutbutton">
+      <metrics statements="20" coveredstatements="7" conditionals="6" coveredconditionals="1" methods="6" coveredmethods="1"/>
+      <file name="LogOutButon.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\layout\logoutbutton\LogOutButon.jsx">
+        <metrics statements="20" coveredstatements="7" conditionals="6" coveredconditionals="1" methods="6" coveredmethods="1"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="27" type="stmt"/>
+        <line num="15" count="27" type="stmt"/>
+        <line num="17" count="27" type="stmt"/>
+        <line num="19" count="27" type="stmt"/>
+        <line num="21" count="27" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="46" count="27" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.layout.nav.AdminNav">
+      <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="Nav.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\layout\nav\AdminNav\Nav.jsx">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="6" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.layout.nav.ProfessorNav">
+      <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="Nav.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\layout\nav\ProfessorNav\Nav.jsx">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.layout.nav.StudentNav">
+      <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+      <file name="Nav.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\layout\nav\StudentNav\Nav.jsx">
+        <metrics statements="4" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="2" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="11" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.project.filtersections.projects.foryou">
+      <metrics statements="7" coveredstatements="5" conditionals="7" coveredconditionals="4" methods="4" coveredmethods="2"/>
+      <file name="ForYouSection.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\project\filtersections\projects\foryou\ForYouSection.jsx">
+        <metrics statements="7" coveredstatements="5" conditionals="7" coveredconditionals="4" methods="4" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.project.myprojects">
+      <metrics statements="5" coveredstatements="4" conditionals="7" coveredconditionals="4" methods="2" coveredmethods="1"/>
+      <file name="MyProjects.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\project\myprojects\MyProjects.jsx">
+        <metrics statements="5" coveredstatements="4" conditionals="7" coveredconditionals="4" methods="2" coveredmethods="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.project.projectcard">
+      <metrics statements="13" coveredstatements="2" conditionals="20" coveredconditionals="0" methods="5" coveredmethods="0"/>
+      <file name="ProjectCard.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\project\projectcard\ProjectCard.jsx">
+        <metrics statements="13" coveredstatements="2" conditionals="20" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="104" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.project.projectmenu">
+      <metrics statements="16" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="Menu.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\project\projectmenu\Menu.jsx">
+        <metrics statements="16" coveredstatements="2" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="76" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.project.trending.trendingindex">
+      <metrics statements="5" coveredstatements="4" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="1"/>
+      <file name="TrendingIndex.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\project\trending\trendingindex\TrendingIndex.jsx">
+        <metrics statements="5" coveredstatements="4" conditionals="8" coveredconditionals="6" methods="2" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="20" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.project.trendnumber">
+      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="Number.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\project\trendnumber\Number.jsx">
+        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.users.usercard">
+      <metrics statements="15" coveredstatements="8" conditionals="24" coveredconditionals="10" methods="5" coveredmethods="1"/>
+      <file name="UserCard.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\users\usercard\UserCard.jsx">
+        <metrics statements="15" coveredstatements="8" conditionals="24" coveredconditionals="10" methods="5" coveredmethods="1"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="36" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="75" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.users.usersList">
+      <metrics statements="12" coveredstatements="8" conditionals="7" coveredconditionals="4" methods="5" coveredmethods="2"/>
+      <file name="UsersList.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\users\usersList\UsersList.jsx">
+        <metrics statements="12" coveredstatements="8" conditionals="7" coveredconditionals="4" methods="5" coveredmethods="2"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="31" count="3" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="35" count="3" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.utils.NothingToSee">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="NothingToSee.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\utils\NothingToSee\NothingToSee.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.utils.error">
+      <metrics statements="18" coveredstatements="2" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="ErrorPopUp.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\utils\error\ErrorPopUp.jsx">
+        <metrics statements="18" coveredstatements="2" conditionals="12" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="54" count="7" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.utils.success">
+      <metrics statements="9" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="SuccessPopUp.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\utils\success\SuccessPopUp.jsx">
+        <metrics statements="9" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.utils.validation">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ValidationError.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\components\utils\validation\ValidationError.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="context">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="WarningContext.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\context\WarningContext.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="30" type="stmt"/>
+        <line num="14" count="30" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.public.LogIn">
+      <metrics statements="26" coveredstatements="6" conditionals="21" coveredconditionals="9" methods="4" coveredmethods="1"/>
+      <file name="LogIn.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\pages\public\LogIn\LogIn.jsx">
+        <metrics statements="26" coveredstatements="6" conditionals="21" coveredconditionals="9" methods="4" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+        <line num="22" count="16" type="stmt"/>
+        <line num="24" count="16" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="66" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.public.Register">
+      <metrics statements="10" coveredstatements="5" conditionals="10" coveredconditionals="7" methods="3" coveredmethods="1"/>
+      <file name="Register.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\pages\public\Register\Register.jsx">
+        <metrics statements="10" coveredstatements="5" conditionals="10" coveredconditionals="7" methods="3" coveredmethods="1"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="21" count="17" type="stmt"/>
+        <line num="23" count="17" type="stmt"/>
+        <line num="25" count="17" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="46" count="17" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.shared.projectscareer">
+      <metrics statements="6" coveredstatements="5" conditionals="16" coveredconditionals="8" methods="2" coveredmethods="1"/>
+      <file name="ProjectsCareer.jsx" path="C:\Users\Usuario\Documents\Proyectos\PlataformaProyectosAula\client\src\pages\shared\projectscareer\ProjectsCareer.jsx">
+        <metrics statements="6" coveredstatements="5" conditionals="16" coveredconditionals="8" methods="2" coveredmethods="1"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="6" type="stmt"/>
+        <line num="17" count="6" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="68" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

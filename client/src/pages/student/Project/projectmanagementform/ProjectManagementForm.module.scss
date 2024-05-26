@@ -1,0 +1,38 @@
+@import '../../../../assets/styles/partials/variables';
+@import '../../../../assets/styles/mixins/mixins';
+
+.main {
+	background-color: $secondary-white;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+    width: 90%;
+    max-width: 450px;
+	padding: 3rem 1rem;
+    margin: auto;
+	&__title {
+        color: $primary-purple;
+		text-align: center;
+		font-size: 1.5rem;
+		margin-bottom: 0.5rem;
+	}
+	&__label {
+        color: rgb(18, 18, 18);
+	}
+	&__input {
+		@include input;
+	}
+    &__inputFile{
+        width: 60%
+    }
+	&__textarea {
+		@include textarea;
+	}
+	&__button {
+        @include button-styles($secondary-blue, $primary-white, #005aad);
+	}
+}
+

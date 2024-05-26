@@ -1,0 +1,40 @@
+@import '../../../assets/styles/mixins/mixins';
+@import '../../../assets/styles/partials/variables';
+.form {
+	width: 80%;
+	max-width: 400px;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.4rem;
+	box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+	background-color: $primary-white;
+	&__textarea {
+		@include textarea;
+		border: none;
+		margin: 0;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	&__separator {
+		width: 95%;
+		height: 2px;
+		background-color: rgba($light-grey, 1);
+		border: none;
+		margin-bottom: 0.7rem;
+	}
+
+	&__button {
+		@include button-styles(#219cbc, white, #0f6b83);
+		width: 40%;
+		font-size: 0.9rem;
+		padding: 0.6rem;
+		align-self: flex-end;
+		margin: 0.5rem 0.5rem;
+	}
+}

@@ -19,12 +19,17 @@ export const ErrorPopUp = ({ message }) => {
 	}, []);
 
 	if (message !== undefined && message.includes) {
-		if (message.includes('403')) {
-			message = 'Su cuenta ha sido suspendida';
-		} else if (message.includes('401')) {
-			message = 'Esta cuenta no existe';
+		console.log(message);
+		if (message.includes('401')) {
+			message = 'No puede realizar esta opercación';
+		} else if (message.includes('403')) {
+			message = 'El código proporcionado no es válido para el registro.';
 		} else if (message.includes('409')) {
 			message = 'Esta cuenta ya existe';
+		} else if (message.includes('406')) {
+			message = 'El usuario ya está registrado.';
+		} else if (message.includes('500')) {
+			message = 'Error en el servidor, intente mas tarde';
 		} else {
 			message = message;
 		}

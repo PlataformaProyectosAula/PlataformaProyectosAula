@@ -2,7 +2,6 @@
 import { IoLogOut } from 'react-icons/io5';
 // Dependencies
 import { isError, useMutation, useQueryClient } from 'react-query';
-import Cookies from 'js-cookie';
 import { useNavigate } from 'react-router-dom';
 // Request
 import { logoutRequest } from '../../../api/authApi';
@@ -15,32 +14,38 @@ export const LogOutButon = ({ componentClass }) => {
 
 	const QueryClient = useQueryClient();
 
-    const {setVisible} = useContext(WarningContext);
+	const { setVisible } = useContext(WarningContext);
 
 	const navigate = useNavigate();
 
 	const handleLogOut = async () => {
-		const token = Cookies.get('token');
-		try {
-			await logoutMutation.mutateAsync(token, {
-				onSuccess: (data) => {
-					Cookies.remove('token');
-					Cookies.remove('role');
-					QueryClient.clear();
-					if (data === 204) {
-						navigate('/');
-					}
-				},
+		const token = localStorage.getItem('token');
+		if (token === undefined) {
+			setVisible((previous) => {
+				setVisible({ ...previous, logoutError: true });
 			});
-		} catch (error) {
-            setVisible((previous)=>{setVisible({...previous, logoutError: true})});
-			console.log(error);
+		} else {
+			try {
+				await logoutMutation.mutateAsync(token, {
+					onSuccess: (data) => {
+						QueryClient.clear();
+						if (data === 204) {
+							navigate('/');
+						}
+					},
+				});
+			} catch (error) {
+				setVisible((previous) => {
+					setVisible({ ...previous, logoutError: true });
+				});
+				console.log(error);
+			}
 		}
 	};
 
 	return (
 		<>
-            {isError.message && <ErrorPopUp message={logoutMutation.error.message} />}
+			{isError.message && <ErrorPopUp message={logoutMutation.error.message} />}
 			<button
 				className={componentClass}
 				type='button'
@@ -49,7 +54,7 @@ export const LogOutButon = ({ componentClass }) => {
 					handleLogOut();
 				}}
 			>
-				<IoLogOut /> Cerrar Sesion
+				<IoLogOut /> Cerrar Sesión
 			</button>
 		</>
 	);

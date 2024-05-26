@@ -1,0 +1,95 @@
+@import '../../../assets/styles/partials/variables';
+@import '../../../assets/styles/mixins/mixins';
+
+.card {
+	width: 90%;
+	max-width: 330px;
+	box-shadow:
+		rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+		rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+	@media (min-width: 1000px) {
+		width: 30vw;
+		max-width: 25vw;
+	}
+	&__imgContainer {
+		width: 100%;
+	}
+	&__img {
+		width: 100%;
+	}
+	&__buttonMenu {
+		background-color: inherit;
+		padding: 0.2rem;
+		float: right;
+	}
+	&__contentContainer {
+		padding: 0.5rem 0.6rem;
+		line-height: 1.7;
+	}
+	&__title {
+		color: $primary-purple;
+		font-weight: 600;
+		font-size: 1.1rem;
+	}
+	&__text {
+		font-weight: 300;
+		line-height: 1.6;
+	}
+	&__link {
+		color: $primary-blue;
+		font-weight: 400;
+	}
+	&__buttonContainer {
+		padding: 0.4rem 2rem 1rem 0.4rem;
+		display: flex;
+		justify-content: flex-end;
+		gap: 0.5rem;
+	}
+	&__button {
+		background-color: inherit;
+		font-size: 1.4rem;
+		padding: 0.6rem;
+		height: 43px;
+		&:hover {
+			transform: scale(1.1);
+			transition: 0.3s 0.3s ease-in;
+		}
+	}
+	&__buttonLike {
+		@extend .card__button;
+		color: $text-grey;
+		fill: red;
+		&:hover {
+			color: red;
+		}
+	}
+	&__buttonLike__active {
+		@extend .card__button;
+		color: $primary-red;
+		&:hover {
+			color: red;
+		}
+	}
+	&__buttonComment {
+		@extend .card__button;
+		color: $secondary-yellow;
+		&:hover {
+			color: $primary-yellow;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text__light {
+		color: #432e2e;
+		font-weight: 200;
+	}
+}
+
+.loaderContainer {
+	@include loaderContainer;
+	padding: 5rem;
+}

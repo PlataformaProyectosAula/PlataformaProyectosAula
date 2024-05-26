@@ -1,49 +1,62 @@
+import { useMutation } from 'react-query';
 // Styles
 import styles from './UserCard.module.scss';
-// Default image
-import icon from '../../../assets/img/default/icon.png';
+// Request
+import { changeUserStateRequest } from '../../../api/usersApi';
 // Dependencies
 import { PropTypes } from 'prop-types';
-import { useContext } from 'react';
-// Context
-import { WarningContext } from '../../../context/WarningContext';
+import { QueryClient } from 'react-query';
+import { useState } from 'react';
+export const UserCard = ({ user, page }) => {
+	const [userData, setUserData] = useState({
+		id: user.id,
+		user_name: user.attributes && user.attributes.user_name,
+		code: user.attributes && user.attributes.code,
+		email: user.attributes && user.attributes.email,
+		description: user.attributes && user.attributes.description,
+		role: user.attributes && user.attributes.role_id,
+		state: user.attributes && user.attributes.state,
+		carrera: user.attributes.carrera,
+		departamento: user.attributes.departamento,
+		semestre: user.attributes.semestre,
+	});
 
-export const UserCard = ({ user }) => {
-	const userData = {
-		id: user.data.id,
-		user_name: user.data.attributes.user_name,
-		code: user.data.attributes.code,
-		email: user.data.attributes.email,
-		description: user.data.attributes.description,
-		role: user.data.attributes.role_id,
-		state: user.data.attributes.state,
-	};
+	const queryClient = new QueryClient();
 
-	const { setVisible } = useContext(WarningContext);
+	const changeStateMutation = useMutation((id) => changeUserStateRequest(id), {
+		onSuccess: () => {
+			setUserData((prevUserData) => ({
+				...prevUserData,
+				state: prevUserData.state === '1' ? '0' : '1',
+			}));
+			queryClient.invalidateQueries(['users', page]);
+		},
+	});
 
-	const setConfirmation = () => {
-		setVisible((prevVisible) => ({
-			...prevVisible,
-			deactivateUserWarning: true,
-		}));
+	const changeUserState = async (id) => {
+		await changeStateMutation.mutateAsync(id);
 	};
 
 	return (
 		<>
-			<div className={styles.card}>
+			<div data-testid='user-card' className={styles.card}>
 				<img
-					src={icon}
 					alt='user icon'
 					role='img'
 					className={styles.card__img}
+					src={`https://i.pravatar.cc/150?u=${userData.id}`}
 				/>
 				<div className={styles.card__container}>
 					<p className={styles.card__textBold}>{userData.user_name}</p>
-					<p className={styles.card__textBold}>
+					<p className={styles.card__textRegular}>
 						{userData.role === 2
-							? 'Estudiante'
+							? 'Estudiante de ' +
+								userData.carrera +
+								', ' +
+								'Semestre ' +
+								userData.semestre
 							: userData.role === 3
-								? 'Profesor'
+								? 'Profesor del ' + userData.departamento
 								: ''}
 					</p>
 					<p className={styles.card__textLight}>{userData.code}</p>
@@ -51,13 +64,16 @@ export const UserCard = ({ user }) => {
 				</div>
 			</div>
 			<button
+				role='button'
 				type='button'
 				className={
-					userData.state === 1 ? styles.buttonDeactivate : styles.buttonActivate
+					userData.state === '1'
+						? styles.buttonDeactivate
+						: styles.buttonActivate
 				}
-				onClick={setConfirmation}
+				onClick={() => changeUserState(userData.id)}
 			>
-				{userData.state === 1 ? 'Desactivar' : 'Activar'}
+				{userData.state === '1' ? 'Desactivar' : 'Activar'}
 			</button>
 			<hr className={styles.card__hr} />
 		</>
@@ -70,11 +86,11 @@ UserCard.propTypes = {
 			id: PropTypes.number,
 			attributes: PropTypes.shape({
 				email: PropTypes.string.isRequired,
-				code: PropTypes.string.isRequired,
+				code: PropTypes.number.isRequired,
 				description: PropTypes.string.isRequired,
 				state: PropTypes.number.isRequired,
 				role_id: PropTypes.number.isRequired,
-			}).isRequired,
-		}).isRequired,
+			}),
+		}),
 	}).isRequired,
 };

@@ -1,5 +1,6 @@
 :root {
-	font-family: sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
 	line-height: 1.5;
 }
 
@@ -28,5 +29,9 @@ li{
 a, Link{
 	text-decoration: none;
 	color: inherit;
+}
+
+label{
+	display: block;
 }
 

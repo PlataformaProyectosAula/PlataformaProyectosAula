@@ -1,0 +1,24 @@
+@import '../../../assets/styles/partials/variables';
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-block: 2rem;
+	gap: 1rem;
+    background-color: #fff;
+    height: 100vh;
+    &__img{
+        width: 100%;
+        max-width: 550px;
+    }
+
+    &__link{
+        color: $primary-blue;
+
+        &:hover{
+            color: skyblue;
+            transition: color ease-in 0.3s 0.3s;
+        }
+    }
+}

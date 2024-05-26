@@ -11,7 +11,6 @@ import { ValidationError } from '../../../components/utils/validation/Validation
 import { ErrorPopUp } from '../../../components/utils/error/ErrorPopUp';
 import { SuccessPopUp } from '../../../components/utils/success/SuccessPopUp';
 import BarLoader from 'react-spinners/BarLoader';
-import { Nav } from '../../../components/layout/nav/StudentNav/Nav';
 
 export const Register = () => {
 	const {
@@ -54,7 +53,6 @@ export const Register = () => {
 			)}
 			<main className={styles.main}>
 				<form
-					method='post'
 					className={styles.form}
 					role='form'
 					onSubmit={handleSubmit(handleRegister)}
@@ -110,17 +108,16 @@ export const Register = () => {
 							Inicia sesion
 						</Link>
 					</p>
-
-					{registerMutation.isLoading && (
-						<div data-testid='loader-container' className={styles.form__loader}>
+					<div data-testid='loader-container' className={styles.form__loader}>
+						{registerMutation.isLoading && (
 							<BarLoader
 								color='#0A84F4'
 								height={7}
 								width={470}
 								loading={registerMutation.isLoading}
 							/>
-						</div>
-					)}
+						)}
+					</div>
 				</form>
 			</main>
 		</>
